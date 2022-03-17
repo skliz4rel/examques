@@ -11,18 +11,22 @@ import com.mycompany.aishaexam.common.Boat;
  *
  * @author skliz
  */
-public abstract class TurboEngine  implements Boat {
-    
-    
-    protected Boat decoratedBoat;
+public class TurboEngine extends BoatDecorator{
     
     public TurboEngine(Boat decoratedBoat){
-        this.decoratedBoat = decoratedBoat;
+        
+        super(decoratedBoat);
     }
     
+    @Override
     public int topSpeed (){
-               
-        return this.maxCapacity;
+        //int a = this.maxCapacity;
+        return this.add10(decoratedBoat.topSpeed());
+    }
+    
+    private int add10(int num){
+        
+        return (num+10);
     }
     
 }
