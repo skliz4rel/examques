@@ -11,7 +11,7 @@ package com.mycompany.aishaexam.builder;
  */
 public class Client {
     
-    public static void main(){
+    public static void main(String[] args){
         
         Product p= new ConcreteBuilder1().buildPart();
         

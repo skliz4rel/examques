@@ -11,9 +11,6 @@ package com.mycompany.aishaexam.builder;
  */
 public class ConcreteBuilder2 implements Builder{
     
-    
-    
-    
      public Product buildPart(){
         
         Product p= new Product();

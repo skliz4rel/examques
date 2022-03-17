@@ -48,6 +48,6 @@ public class Product {
     @Override
     public String toString(){
         
-        return "";
+        return "{ Part1 : "+this.Part1+", Part2 : "+this.Part2+", Part3 : "+this.Part3+", Part4 : "+this.Part4 +" }";
     }
 }
